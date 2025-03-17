@@ -1,0 +1,38 @@
+# Ignore Rust build directory except Levels
+/target/debug/*
+!/target/debug/Levels/
+/target/release/*
+!/target/release/Levels/
+
+# If using rustup, ignore toolchain overrides
+rust-toolchain
+rust-toolchain.toml
+
+# Ignore Cargo lock file if building a library
+# (Uncomment the next line if this is a library, but keep it for binaries)
+/Cargo.lock
+
+# Ignore editor and IDE settings
+**/*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*.idea/
+*.vscode/
+*.DS_Store
+*.log
+
+# Ignore compiled binaries
+**/*.rmeta
+**/*.rlib
+**/*.d
+
+# Ignore debugging and profiling tools
+**/gdb_history
+**/lldb_history
+
+# Ignore coverage and test output
+/coverage/
+/tests_output/
+
