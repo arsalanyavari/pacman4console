@@ -5,7 +5,31 @@
 This repository is a Rust implementation of the **pacman4console** game originally written in C. The original project can be found at: [pacman4console](https://github.com/YoctoForBeaglebone/pacman4console).
 
 ### Running the Game:
+### >> Running using System Binaries
 
+- Download the latest version of binary based on your system [Download](https://github.com/arsalanyavari/pacman4console/releases/latest) (aarch64 for ARM based processor and x86_64 for AMD based processors)
+- Unzip the file
+- Go to the `release` directory
+- Open Terminal (PowerShell or CMD if you are Windows user)
+- Run the app with the below format:
+```
+./pacman <level number>
+```
+> [!Note]
+> For example, to play level 9: `./pacman 9`
+
+
+### >> Runing using Docker
+- Pull the image `docker pull ghcr.io/arsalanyavari/pacman4console:latest`
+- Run container and get Bash from the container
+- Run the app with the below format:
+```
+./pacman <level number>
+```
+> [!Note]
+> For example, to play level 9: `./pacman 9`
+
+### >> Running or Building from the Source: 
 ### Debug Mode
 To run the game in debug mode, use the following command:
 ```sh
